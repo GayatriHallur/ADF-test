@@ -1,0 +1,84 @@
+{
+	"name": "ds_json_data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_gen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "user.json",
+				"fileSystem": "input"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"schema": {
+					"type": "string"
+				},
+				"payload": {
+					"type": "object",
+					"properties": {
+						"LastModifiedDate": {
+							"type": "string"
+						},
+						"ChangeEventHeader": {
+							"type": "object",
+							"properties": {
+								"commitNumber": {
+									"type": "integer"
+								},
+								"commitUser": {
+									"type": "string"
+								},
+								"sequenceNumber": {
+									"type": "integer"
+								},
+								"entityName": {
+									"type": "string"
+								},
+								"changeType": {
+									"type": "string"
+								},
+								"changedFields": {
+									"type": "array",
+									"items": {
+										"type": "string"
+									}
+								},
+								"changeOrigin": {
+									"type": "string"
+								},
+								"transactionKey": {
+									"type": "string"
+								},
+								"commitTimestamp": {
+									"type": "integer"
+								},
+								"recordIds": {
+									"type": "array",
+									"items": {
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				},
+				"event": {
+					"type": "object",
+					"properties": {
+						"replayId": {
+							"type": "integer"
+						}
+					}
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

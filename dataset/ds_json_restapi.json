@@ -1,0 +1,13 @@
+{
+	"name": "ds_json_restapi",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_restapi_json",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

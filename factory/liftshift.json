@@ -1,0 +1,9 @@
+{
+	"name": "liftshift",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "81e87dde-1f29-4060-b69b-2dfb9635046c",
+		"tenantId": "e77cc94a-bd64-4aaf-aba2-ac4e33c93a92"
+	}
+}

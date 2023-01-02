@@ -1,9 +1,9 @@
 {
-	"name": "Json to SQL database",
+	"name": "Json test data to SQL database",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy Json data to SQL",
+				"name": "Copy ADLS file to SQL database",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -36,12 +36,12 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
-						"mapComplexValuesToString": true
+						"mapComplexValuesToString": false
 					}
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_json_data",
+						"referenceName": "ls_test_json_Data",
 						"type": "DatasetReference"
 					}
 				],

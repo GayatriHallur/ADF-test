@@ -1,5 +1,5 @@
 {
-	"name": "Json to SQL database Insert",
+	"name": "Json to SQL database",
 	"properties": {
 		"activities": [
 			{

@@ -30,10 +30,91 @@
 							"type": "AzureBlobFSWriteSettings"
 						},
 						"formatSettings": {
-							"type": "JsonWriteSettings"
+							"type": "JsonWriteSettings",
+							"filePattern": "arrayOfObjects"
 						}
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['id']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['name']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['username']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['email']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['address']['street']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['address']['suite']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['address']['city']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['address']['zipcode']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['address']['geo']['lat']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['address']['geo']['lng']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['phone']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['website']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['company']['name']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['company']['catchPhrase']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['company']['bs']"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{

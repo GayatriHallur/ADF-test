@@ -17,63 +17,63 @@
 		"schema": {
 			"type": "object",
 			"properties": {
-				"schema": {
+				"id": {
+					"type": "integer"
+				},
+				"name": {
 					"type": "string"
 				},
-				"payload": {
+				"username": {
+					"type": "string"
+				},
+				"email": {
+					"type": "string"
+				},
+				"address": {
 					"type": "object",
 					"properties": {
-						"LastModifiedDate": {
+						"street": {
 							"type": "string"
 						},
-						"ChangeEventHeader": {
+						"suite": {
+							"type": "string"
+						},
+						"city": {
+							"type": "string"
+						},
+						"zipcode": {
+							"type": "string"
+						},
+						"geo": {
 							"type": "object",
 							"properties": {
-								"commitNumber": {
-									"type": "integer"
-								},
-								"commitUser": {
+								"lat": {
 									"type": "string"
 								},
-								"sequenceNumber": {
-									"type": "integer"
-								},
-								"entityName": {
+								"lng": {
 									"type": "string"
-								},
-								"changeType": {
-									"type": "string"
-								},
-								"changedFields": {
-									"type": "array",
-									"items": {
-										"type": "string"
-									}
-								},
-								"changeOrigin": {
-									"type": "string"
-								},
-								"transactionKey": {
-									"type": "string"
-								},
-								"commitTimestamp": {
-									"type": "integer"
-								},
-								"recordIds": {
-									"type": "array",
-									"items": {
-										"type": "string"
-									}
 								}
 							}
 						}
 					}
 				},
-				"event": {
+				"phone": {
+					"type": "string"
+				},
+				"website": {
+					"type": "string"
+				},
+				"company": {
 					"type": "object",
 					"properties": {
-						"replayId": {
-							"type": "integer"
+						"name": {
+							"type": "string"
+						},
+						"catchPhrase": {
+							"type": "string"
+						},
+						"bs": {
+							"type": "string"
 						}
 					}
 				}

@@ -41,76 +41,121 @@
 							{
 								"source": {
 									"path": "$['id']"
+								},
+								"sink": {
+									"path": "id"
 								}
 							},
 							{
 								"source": {
 									"path": "$['name']"
+								},
+								"sink": {
+									"path": "name"
 								}
 							},
 							{
 								"source": {
 									"path": "$['username']"
+								},
+								"sink": {
+									"path": "username"
 								}
 							},
 							{
 								"source": {
 									"path": "$['email']"
+								},
+								"sink": {
+									"path": "email"
 								}
 							},
 							{
 								"source": {
 									"path": "$['address']['street']"
+								},
+								"sink": {
+									"path": "address_street"
 								}
 							},
 							{
 								"source": {
 									"path": "$['address']['suite']"
+								},
+								"sink": {
+									"path": "address_suite"
 								}
 							},
 							{
 								"source": {
 									"path": "$['address']['city']"
+								},
+								"sink": {
+									"path": "address_city"
 								}
 							},
 							{
 								"source": {
 									"path": "$['address']['zipcode']"
+								},
+								"sink": {
+									"path": "address_zipcode"
 								}
 							},
 							{
 								"source": {
 									"path": "$['address']['geo']['lat']"
+								},
+								"sink": {
+									"path": "geo_lat"
 								}
 							},
 							{
 								"source": {
 									"path": "$['address']['geo']['lng']"
+								},
+								"sink": {
+									"path": "geo_lng"
 								}
 							},
 							{
 								"source": {
 									"path": "$['phone']"
+								},
+								"sink": {
+									"path": "phone"
 								}
 							},
 							{
 								"source": {
 									"path": "$['website']"
+								},
+								"sink": {
+									"path": "website"
 								}
 							},
 							{
 								"source": {
 									"path": "$['company']['name']"
+								},
+								"sink": {
+									"path": "company_name"
 								}
 							},
 							{
 								"source": {
 									"path": "$['company']['catchPhrase']"
+								},
+								"sink": {
+									"path": "company_catchPhrase"
 								}
 							},
 							{
 								"source": {
 									"path": "$['company']['bs']"
+								},
+								"sink": {
+									"path": "company_bs"
 								}
 							}
 						]
